@@ -5,11 +5,7 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   resolve: {
     alias: {
-      buffer: "buffer",
-      http: "stream-http",
-      https: "https-browserify",
-      url: "url",
-      util: "util",
+      "./runtimeConfig": "./runtimeConfig.browser",
     },
   },
   plugins: [react()],
