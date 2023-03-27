@@ -9,7 +9,11 @@ import {
   Card,
 } from "@aws-amplify/ui-react";
 
-function App({ signOut }) {
+interface Props {
+  signOut?: any;
+}
+
+function App({ signOut }: Props) {
   return (
     <View className="App">
       <Card>
